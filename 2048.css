@@ -1,15 +1,3 @@
-/*
-original working version for the static page
-
-body { font-family: Arial, sans-serif; background: #bbada0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0 }
-h1 { color: #776e65; text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 60px }
-#game { width: 500px; height: 500px; background: #cdc1b4; display: grid; grid-template: repeat(4, 1fr) / repeat(4, 1fr); gap: 10px; padding: 10px; }
-.tile { display: flex; justify-content: center; align-items: center; color: #776e65; font-weight: bold; font-size: 55px; border-radius: 7px; }
-.tile-2 { background: #eee4da; }
-.tile-4 { background: #ede0c8; }
-.tile-empty { background: #d6cfc4 }
-*/
-
 * { margin:0; padding:0; box-sizing:border-box }
 body { display:flex; flex-direction:column; justify-content:center; align-items:center; background:#bbada0; font-family:Arial, sans-serif }
 h1 { color:#776e65; text-align:center; margin:20px 0; font-size:60px }
