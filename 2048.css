@@ -1,0 +1,36 @@
+/*
+original working version for the static page
+
+body { font-family: Arial, sans-serif; background: #bbada0; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0 }
+h1 { color: #776e65; text-align: center; margin-top: 20px; margin-bottom: 20px; font-size: 60px }
+#game { width: 500px; height: 500px; background: #cdc1b4; display: grid; grid-template: repeat(4, 1fr) / repeat(4, 1fr); gap: 10px; padding: 10px; }
+.tile { display: flex; justify-content: center; align-items: center; color: #776e65; font-weight: bold; font-size: 55px; border-radius: 7px; }
+.tile-2 { background: #eee4da; }
+.tile-4 { background: #ede0c8; }
+.tile-empty { background: #d6cfc4 }
+*/
+
+* { margin:0; padding:0; box-sizing:border-box }
+body { display:flex; flex-direction:column; justify-content:center; align-items:center; background:#bbada0; font-family:Arial, sans-serif }
+h1 { color:#776e65; text-align:center; margin:20px 0; font-size:60px }
+#game { display:grid; grid-template-columns:repeat(4, 1fr); grid-template-rows:repeat(4, 1fr); gap:10px; width:500px; height:500px; background:#bbada0; padding:10px; box-shadow:0 0 40px rgba(0, 0, 0, 0.5); margin:0 auto }
+.tile { display:flex; justify-content:center; align-items:center; background:#cdc1b4; font-weight:bold; font-size:55px; color:#f9f6f2 }
+.tile.tile-empty { background:#cdc1b4; color:transparent }
+.tile.tile-1 { background:#eee4da; color:#81a8b5 }
+.tile.tile-2 { background:#ede0c8; color:#81a8b5 }
+.tile.tile-3 { background:#f2b179 }
+.tile.tile-4 { background:#f59563 }
+.tile.tile-5 { background:#f67c5f }
+.tile.tile-6 { background:#f65e3b }
+.tile.tile-7 { background:#edcf72 }
+.tile.tile-8 { background:#edcc61 }
+.tile.tile-9 { background:#edc850 }
+.tile.tile-10 { background:#edc53f; font-size:45px }
+.tile.tile-11 { background:#edc22e; font-size:45px }
+.tile.tile-12 { background:#3c3a32; font-size:45px }
+.tile.tile-13 { background:#3c3a32; font-size:45px }
+.tile.tile-14 { background:#3c3a32; font-size:36px }
+.tile.tile-15 { background:#3c3a32; font-size:36px }
+.tile.tile-16 { background:#3c3a32; font-size:36px }
+.tile.tile-17 { background:#3c3a32; font-size:30px }
+
