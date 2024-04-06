@@ -90,16 +90,17 @@ def setup_game():
 """ board()
 
 In board() we get our game representation and return an HTML string containing div#game.
+
+We only generate the contents of the div (i.e. the inner HTML) which is just the 16 div tiles.
 """
 
 def board(game_rep):
-    html = '<div id=game>'
-    for val in game_rep:
-        class_name = f'tile tile-{val}' if val > 0 else 'tile tile-empty'
-        tile_value = str(2**val) if val > 0 else ''
-        html += f'<div class="{class_name}">{tile_value}</div>'
-    html += '</div>'
-    return html
+    html = []
+    for value in game_rep:
+        class_name = f"tile tile-{value}" if value else "tile tile-empty"
+        tile_content = str(2 ** value) if value else ""
+        html.append(f'<div class="{class_name}">{tile_content}</div>')
+    return "".join(html)
 
 """ #handle_move_4cell
 In hande_move_4cell, we get 4 ints representing either a row or column and handle the intra-row part of the move.
